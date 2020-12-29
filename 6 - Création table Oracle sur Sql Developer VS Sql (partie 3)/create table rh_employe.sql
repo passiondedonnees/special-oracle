@@ -21,3 +21,5 @@ references rh_employe(no_emp);
 alter table rh_employe
 add constraint uk_rh_employe_01
 unique (nom_emp, prenom_emp);
+
+create index ix_rh_employe_01 on rh_employe(date_embauche);
